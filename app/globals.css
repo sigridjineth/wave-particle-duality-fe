@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 248, 250, 252;
+  --background-end-rgb: 241, 245, 249;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+          to bottom,
+          rgb(var(--background-start-rgb)),
+          rgb(var(--background-end-rgb))
+  );
+}
+
+.timeline-container {
+  @apply relative max-w-6xl mx-auto p-8;
+}
+
+.timeline-line {
+  @apply absolute left-1/2 top-0 bottom-0 w-0.5 bg-gray-300 transform -translate-x-1/2;
+}
+
+.timeline-item {
+  @apply relative flex items-center gap-8 py-8;
+}
+
+.timeline-dot {
+  @apply absolute left-1/2 w-4 h-4 bg-blue-500 rounded-full transform -translate-x-1/2;
+}
+
+.timeline-content {
+  @apply w-5/12 bg-white rounded-lg shadow-md p-6;
+}
