@@ -24,7 +24,25 @@ const references: Reference[] = [
     publication: 'Canon Technology: Canon Science Lab',
     url: 'https://global.canon/en/technology/s_labo/light/001/11.html',
   },
-  // ... 나머지 참고문헌
+  {
+    author: 'American Museum of Natural History',
+    title: "Einstein's Theory and Light",
+    publication: "American Museum of Natural History",
+    url: 'https://www.amnh.org/exhibitions/einstein/light',
+  },
+  {
+    author: 'Hoang, Trang',
+    title: 'Compton Effect: Radiology Reference Article',
+    publication: 'Radiopaedia Blog RSS, Radiopaedia.org',
+    date: '15 Sept. 2021',
+    url: 'https://radiopaedia.org/articles/compton-effect',
+  },
+  {
+    author: 'Encyclopædia Britannica, Inc.',
+    title: "Huygens' Principle",
+    publication: "Encyclopædia Britannica",
+    url: 'https://www.britannica.com/science/Huygens-principle',
+  }
 ];
 
 export function References() {
