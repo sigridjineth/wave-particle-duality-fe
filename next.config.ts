@@ -1,9 +1,17 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
-// next.config.mjs
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    reactStrictMode: true,
-}
+  reactStrictMode: true,
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'upload.wikimedia.org',
+        pathname: '**',
+      },
+    ],
+  },
+};
 
 export default nextConfig;
