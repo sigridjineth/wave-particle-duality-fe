@@ -17,6 +17,7 @@ interface ScientistCardProps {
     nobelPrize?: number;
   };
   isLeft: boolean;
+  index: number;
 }
 
 export function ScientistCard({ scientist, isLeft }: ScientistCardProps) {
