@@ -1,9 +1,9 @@
-import {Timeline} from "@/src/components/timeline/Timeline";
+import {TheoryMap} from "@/src/components/theory-map/TheoryMap";
 
 export default function Home() {
     return (
-        <main className="min-h-screen py-12 bg-gradient-to-b from-gray-50 to-gray-100">
-            <Timeline />
+        <main className="min-h-screen bg-gray-50">
+            <TheoryMap />
         </main>
-    )
+    );
 }
