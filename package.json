@@ -6,9 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "lint": "next lint && prettier --check .",
+    "lint:fix": "next lint --fix && prettier --write ."
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.2",

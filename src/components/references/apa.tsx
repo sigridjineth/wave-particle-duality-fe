@@ -27,7 +27,7 @@ const references: Reference[] = [
   {
     author: 'American Museum of Natural History',
     title: "Einstein's Theory and Light",
-    publication: "American Museum of Natural History",
+    publication: 'American Museum of Natural History',
     url: 'https://www.amnh.org/exhibitions/einstein/light',
   },
   {
@@ -40,9 +40,9 @@ const references: Reference[] = [
   {
     author: 'Encyclopædia Britannica, Inc.',
     title: "Huygens' Principle",
-    publication: "Encyclopædia Britannica",
+    publication: 'Encyclopædia Britannica',
     url: 'https://www.britannica.com/science/Huygens-principle',
-  }
+  },
 ];
 
 export function References() {
@@ -65,7 +65,8 @@ export function References() {
               <div className="text-gray-400 flex-shrink-0">[{index + 1}]</div>
               <div>
                 <p className="text-gray-800">
-                  {ref.author}. "{ref.title}." <em>{ref.publication}</em>.
+                  {ref.author}. &quot;{ref.title}&quot;{' '}
+                  <em>{ref.publication}</em>.
                 </p>
                 <a
                   href={ref.url}
